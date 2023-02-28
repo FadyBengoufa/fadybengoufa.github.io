@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 export default function ExperienceCard() {
   return (
@@ -24,12 +25,9 @@ export default function ExperienceCard() {
         <h4 className="text-4xl font-light">React Developer</h4>
         <p className="font-bold text-2xl mt-1">UpWork</p>
         <div className="flex space-x-2 my-2">
-          <img
-            className="w-10 h-10 rounded-full"
-            src="https://assets-global.website-files.com/603fea6471d9d8559d077603/6092b7514135708162a4be92_Favicon%20256.png"
-            alt=""
-          />
-          <img
+          <Image
+            width="50"
+            height="50"
             className="w-10 h-10 rounded-full"
             src="https://assets-global.website-files.com/603fea6471d9d8559d077603/6092b7514135708162a4be92_Favicon%20256.png"
             alt=""

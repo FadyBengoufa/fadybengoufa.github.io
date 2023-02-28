@@ -12,7 +12,7 @@ export default function Home() {
     <>
       <div className="h-screen snap-y snap-mandatory overflow-y-scroll overflow-x-hidden z-0 scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-red-200">
         <Head>
-          <title>Fady's Portfolio</title>
+          <title>Fady`&apos;`s Portfolio</title>
         </Head>
 
         <Header />

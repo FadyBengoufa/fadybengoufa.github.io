@@ -16,7 +16,7 @@ function ArticleCard() {
         </h4>
         <p className="text-md font-light tracking-widest pt-2">
           Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry`&apos;`s standard dummy text ever
+          industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever
           since the 1500s, when an unknown printer took...
         </p>
         <button className="group relative h-12 w-40 overflow-hidden rounded-lg bg-white text-sm shadow mt-8 self-end tracking-widest uppercase">

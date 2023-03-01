@@ -6,10 +6,10 @@ import Hero from "@/components/Hero";
 import Head from "next/head";
 import Link from "next/link";
 import { ArrowUpCircleIcon } from "@heroicons/react/24/solid";
-import { fetchPageInfo } from "@/utils/fetchPageInfo";
-import { fetchExperience } from "@/utils/fetchExperience";
-import { fetchArticles } from "@/utils/fetchArticles";
-import { fetchSocials } from "@/utils/fetchSocials";
+import { fetchPageInfo } from "@/lib/fetchPageInfo";
+import { fetchExperience } from "@/lib/fetchExperience";
+import { fetchArticles } from "@/lib/fetchArticles";
+import { fetchSocials } from "@/lib/fetchSocials";
 
 export default function Home({ pageInfo, socials, experiences, articles }) {
   return (

@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import ArticleCard from "./ArticleCard";
 
-export default function Articles() {
+export default function Articles({articles}) {
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -16,10 +16,9 @@ export default function Articles() {
       </h3>
       <div className="w-full flex space-x-5 overflow-x-scroll p-10 snap-x snap-mandatory scrollbar-thin scrollbar-thumb-[#292929]  scrollbar-track-gray-100">
         {/* ARTICLES CARDS */}
-        <ArticleCard />
-        <ArticleCard />
-        <ArticleCard />
-        <ArticleCard />
+        {articles?.map((article) => (
+          <ArticleCard key={article._id} article={article} />
+        ))}
       </div>
     </motion.div>
   );

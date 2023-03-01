@@ -11,9 +11,9 @@ const nextConfig = {
       },
       {
         protocol: 'https',
-        hostname: 'res.cloudinary.com',
+        hostname: 'cdn.sanity.io',
         port: '',
-        pathname: '/monday-blogs/**',
+        pathname: '/images/**',
       },
     ],
   },

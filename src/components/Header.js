@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 
 function Header({ socials }) {
   return (
-    <header className="sticky top-0 flex justify-between max-w-7xl mx-auto p-5 z-20">
+    <header className="sticky top-0 flex justify-between max-w-7xl mx-auto md:p-5 p-2 z-20">
       <motion.div
         initial={{
           x: -500,

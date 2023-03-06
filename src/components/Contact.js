@@ -13,35 +13,31 @@ export default function Contact() {
 
   return (
     <div className="relative h-screen flex flex-col overflow-hidden max-w-full md:px-10 px-2 text-left items-center justify-evenly mx-auto">
-      <h3 className="absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl">
+      <h3 className="absolute bottom-8 uppercase tracking-[20px] text-gray-500 md:text-2xl text-lg">
         Contact
       </h3>
 
-      <div className="flex flex-col space-y-10">
-        <h4 className="text-3xl font-semibold text-center">
+      <div className="w-full flex flex-col space-y-10">
+        <h4 className="md:text-3xl text-xl font-semibold text-center">
           I have got just what you need. <br />{" "}
           <span className="decoration-red-600 underline">Lets Talk.</span>
         </h4>
-        <div className="space-y-10 text-black">
-          <div className="flex items-center space-x-5 justify-center">
-            <PhoneIcon className="w-7 h-7 animate-pulse" />
-            <p className="text-xl">+(213) 5 40247342</p>
+        <div className="md:space-y-10 space-y-2 text-black">
+          <div className="flex items-center md:space-x-5 space-x-2 justify-center">
+            <EnvelopeIcon className="md:w-7 w-5 md:h-7 h-5 text-red-800" />
+            <p className="md:text-xl text-sm tracking-wide">fady.bengoufa@gmail.com</p>
           </div>
-          <div className="flex items-center space-x-5 justify-center">
-            <EnvelopeIcon className="w-7 h-7 animate-pulse" />
-            <p className="text-xl">fady.bengoufa@gmail.com</p>
-          </div>
-          <div className="flex items-center space-x-5 justify-center">
-            <MapIcon className="w-7 h-7 animate-pulse" />
-            <p className="text-xl">Algeria, Blida</p>
+          <div className="flex items-center md:space-x-5 space-x-2 justify-center">
+            <MapIcon className="md:w-7 w-5 md:h-7 h-5 text-red-800" />
+            <p className="md:text-xl text-sm tracking-wide">Algeria, Blida</p>
           </div>
         </div>
         <form
           onSubmit={handleSubmit(onSubmit)}
-          className="flex flex-col space-y-2 w-fit mx-auto"
+          className="flex flex-col space-y-2 sm:w-auto w-full px-2 mx-auto"
         >
           {/* NAME / EMAIL */}
-          <div className="flex space-x-2">
+          <div className="grid md:grid-cols-2 grid-cols-1 gap-2">
             <input
               placeholder="Name"
               className="contactInput"
@@ -71,7 +67,7 @@ export default function Contact() {
           {/* SUBMIT BUTTON */}
           <button
             type="submit"
-            className="bg-[#292929] py-4 px-6 rounded-md font-bold text-white text-lg"
+            className="bg-[#292929] py-4 px-6 rounded-md font-bold text-white md:text-lg text-sm"
           >
             Submit
           </button>
